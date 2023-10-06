@@ -1,5 +1,18 @@
 // Global Rules
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: 'League Spartan', sans-serif;
 }
 // End of global rules
+
+// Container
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 200px);
+}
+// End of container
