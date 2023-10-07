@@ -1,11 +1,9 @@
 // Footer
 .footer {
     p {
-        text-align: center;
         a {
-            text-decoration: none;
-            color: $very-dark-magenta;
-            font-weight: 700;
+            @extend .very-dark-magenta-color;
+            @extend .font-weight-700;
         }
     }
 }
