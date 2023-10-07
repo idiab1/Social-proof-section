@@ -9,9 +9,8 @@
     url("../../../images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
     // Information
     .information {
-        display: flex;
-        justify-content: center;
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr 1fr;
         gap: 9%;
         // Info 
@@ -142,3 +141,80 @@
     // End of cards
 }
 // End of app style
+
+
+
+@media (max-width: 991.98px)  {
+    .app {
+        background: url("../../../images/bg-pattern-top-mobile.svg") no-repeat top left, 
+        url("../../../images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
+        // Information
+        .information {
+            grid-template-columns: 1fr;
+            gap: 0%;
+            // Info 
+            .info {
+                padding-right: 0;
+                text-align: center;
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+    
+            // Rating
+            .ratings {
+                padding-right: 0;
+                // Rate
+                .rate {
+                    display: block;
+                    text-align: center;
+                    &:nth-child(2) {
+                        left: 0rem;
+                    }
+                    &:last-child{
+                        left: 0rem;
+                    }
+                    // Stars 
+                    .stars {
+                        padding-left: 0;
+                    }
+                    // Description
+                    .desc {
+                        padding-left: 0;
+                        
+                    }
+                }
+            } 
+        }
+        // End of information
+    
+        // Cards
+        .cards {
+            grid-template-columns: 1fr;
+            gap: 0;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        
+            // Card
+            .card {
+                // User info 
+                .user-info {
+                    // Image 
+                    .image {
+                        margin-right: 15px;
+                    }
+                }
+                // User info
+    
+                // Card body
+                .card-body {
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        // End of cards
+    }
+}
+
